@@ -1,2 +1,3 @@
 # MSDA
-# This is a repo for MSDA Data Visualization course. 
+# This is a repo for MSDA Data Visualization course
+# Updated
