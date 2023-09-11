@@ -1,0 +1,50 @@
+---
+title: "Homework 1"
+author: "Nicholas Stevenson"
+format: html
+---
+
+```{r}
+library(tidyverse)
+```
+
+install.packages("here" )
+
+## Data Manipulation
+
+```{r data-read}
+dt = read_csv(here::here("tech_stocks_csv.zip"),
+              show_col_types = FALSE) # this argument is added to silent the output
+```
+
+## Frequency distribution
+
+```{r get-count-fyear}
+count(dt, fyear)
+```
+
+```{r}
+filter(
+  select(dt, conm, fyear),
+  fyear == 2009 | fyear == 2023
+)
+```
+
+```{r}
+filter(
+  select(dt, conm, fyear),
+  !(fyear > 2009 & fyear < 2023)
+)
+```
+
+```{r get-count-conm}
+count(dt, conm)
+```
+
+## Select columns
+
+```{r}
+
+```
+
+
